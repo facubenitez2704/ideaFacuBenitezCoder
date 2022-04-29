@@ -1,4 +1,53 @@
+
+//variables//
 $color-bordes: #A3A8FF ;
 $color-footer: darkmagenta ;
 $medida-basica: 1.5rem ;
 $medida-minima: 0.5rem ;
+
+//mixin//
+@mixin flex {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    list-style: none;
+    text-transform:uppercase;
+    
+}
+@mixin botonFooter {
+    text-decoration:solid;
+    font-size: 1.5rem;
+    font-weight:bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0.8rem;
+    height: 2rem;
+}
+@mixin aMenu {
+    border-radius: 0.8rem;
+    list-style: none;
+    font-size: 2rem;
+    font-weight: bold;
+     text-decoration:solid;
+}
+
+//mapas//
+$standar:(
+color-standar:darkmagenta,
+bg-standar:#8F8CB0,
+border-standar:5px solid #A3A8FF,
+);
+
+$premium:(
+    color-premium: rgba(99, 12, 99, 0.836),
+    bg-premium:linear-gradient(to left, #0a0a11 ,#0e1349),
+    border-premium:3px solid #140307e1,
+);
+
+//extend//
+%medidasImg{
+    width: 80%;
+    height: 28rem;
+    border: $medida-minima solid $color-bordes;
+    border-style:groove;
+    margin-left: 0.8rem;
+}

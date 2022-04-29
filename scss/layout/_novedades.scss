@@ -1,0 +1,117 @@
+@import "../utilities/variables" ;
+
+.colorNovedades{
+background-image: none;
+background: rgb(71,6,113);
+background: linear-gradient(126deg, rgba(71,6,113,1) 0%, rgba(91,8,105,1) 76%, rgba(182,24,144,1) 98%);
+}
+.bodyNovedades
+    {
+        display: grid;
+        grid-template-areas: "headerN headerN headerN headerN"
+                             "mainN mainN mainN mainN"
+                             "footerN footerN footerN footerN";
+    }
+
+.headerNovedades{
+    grid-area: headerN;   
+    background-image: url('../img/fondo\ planetario\ violeta.jpg');
+    .menuNovedades{
+       ul{
+         @include flex ;
+        margin: 1rem;
+        padding: 0.5rem;
+        gap: 1rem;
+        li{
+           a{
+            color:#b1ade2;
+            border: 0.1rem solid;
+            @include aMenu;
+             }
+         }
+        }
+      }
+      .irFooterN {
+        a{
+            color:#8F8CB0;
+            @include botonFooter;
+        }
+     } 
+}
+    
+
+
+.mainNovedades{
+    grid-area: mainN;
+    background-image: url('../img/fondo\ planetario\ violeta.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap; 
+    align-items:flex-start; 
+    justify-content:center;
+    .subNov{
+        color:#A3A8FF;
+      text-decoration: solid;
+      font-size: 2rem;
+      font-weight:bold;
+      text-transform: uppercase;
+      justify-content:center;
+      position: relative;
+      top: auto;}
+    .textoNovedades{
+     color: #8F8CB0;
+     font-style: italic;
+     font-weight: bold;
+     font-size: 1.3rem;
+     text-decoration: solid;
+     text-align: center;
+     margin: 2rem; }
+}
+
+.footerN{
+     grid-area: footerN;
+  h3{
+    font-size: 1.5rem;
+    color: #1170A2;
+    margin: 0.5rem; }
+  h4{
+    margin: 0.5rem;
+    color:#A3A8FF;
+    font-size: 1.1rem;
+    font-weight: bold;}
+   h5{
+    display: inline-block;
+    background-color: darkmagenta;
+    margin-top: 1rem;
+    border-style: groove;
+    border-color: #A3A8FF;
+    font-size: 1rem; }
+   ul {
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+       li{
+        list-style-type: none;
+        font-style: italic;
+        font-size: 1rem;
+        color: darkmagenta;
+        font-weight: bold;
+        border-style:groove;
+        border-color: #6f6faf;
+        border-radius: 0.5rem;
+        background-color:#8F8CB0;
+        border-width:thick;
+        text-transform:uppercase;
+        width: 20%;
+       a{
+        list-style-type: none;
+        font-style: italic;
+        font-size: 1rem;
+        color: darkmagenta;
+        text-decoration: none;
+        font-weight: bold; }  
+       }
+    }
+ }
+
