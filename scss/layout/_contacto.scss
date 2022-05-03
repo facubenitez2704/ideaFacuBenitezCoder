@@ -1,10 +1,14 @@
 @import "../utilities/variables" ;
 
+
+/*CSS DE SECCION CONTACTOS*/
 .bodyContacto{
     background: rgb(35,66,10);
     background: linear-gradient(225deg, rgba(35,66,10,1) 0%, rgba(19,43,4,1) 56%);
     height: 100vh;
 }
+/*HEADER CONTACTOS*/
+
 .headerContacto{
     background-image: none;
     background-image: url('../img/1584713041_archive_shutterstock_1536287759_rz1000.jpg');
@@ -49,7 +53,7 @@
 
 
 
-
+/*MAIN CONTACTOS*/
 
 .mainContacto{
     background-image: none;
@@ -65,7 +69,7 @@
         border-style:ridge;
         border-width: 30px;
         border-color: rgba(4, 36, 8, 0.842);
+        margin-bottom: 100rem;
     }
 
 }
-

@@ -1,25 +1,27 @@
 @import "../utilities/variables" ;
+@import "../utilities/mediaqueries";
 
+/* empieza css de seccion videos*/
 .colorVideos{
- 
-    background-image: none;
-    background-color: black;
+background-image: none;
+background-color: black;
 }
 
 .bodyVideos{
-    display: grid;
-    grid-template-areas: "headerVideos headerVideos headerVideos headerVideos"
-                         " mainVideos mainVideos mainVideos mainVideos"
-                         "mainVideos mainVideos mainVideos mainVideos"
-                         "footerVideos footerVideos footerVideos footerVideos";
+display: grid;
+grid-template-areas: "headerVideos headerVideos headerVideos headerVideos"
+                     " mainVideos mainVideos mainVideos mainVideos"
+                     "mainVideos mainVideos mainVideos mainVideos"
+                     "footerVideos footerVideos footerVideos footerVideos";
 }
+/*css de header videos*/
 .headerVideos{
-    grid-area: headerVideos;
-    background-image:url('../img/forest-passage-4k-wallpaper-preview.jpg');
-    background-size:auto;
-    h1{
-    color: #b1ade2;
-    font-size: 2rem; }
+grid-area: headerVideos;
+background-image:url('../img/forest-passage-4k-wallpaper-preview.jpg');
+background-size:auto;
+  h1{
+  color: #b1ade2;
+  font-size: 2rem; }
   .menuVideos {
 
     ul {
@@ -32,107 +34,96 @@
         }
      }
    }
-   .irFooterV{
-    a{
-    color: rgb(151, 146, 146);
+.irFooterV{
+  a{
+  color: rgb(151, 146, 146);
    @include botonFooter;}
     }
 }
-
+/*css main vdeos*/
 .mainVideos{
-    grid-area: mainVideos;
-    background-image: url('../img/forest-passage-4k-wallpaper-preview.jpg');
-    background-repeat:round;
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100rem;
-    h2{
-    margin: 3rem;
-    margin-bottom: 5rem;
-    padding:2rem;
-    font-size: 3rem;
-    margin: 0%;
-    padding: 0;
-    height: 10rem;}
-    .textoUnoVideo{
-    background-color: transparent;
-    color: #A3A8FF;
-    margin: 1.8rem;
-    font-style: italic;
-    line-height: 1.6;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 2rem;}
-    .videoUno{
-    border-style: groove;
-    border-width: 0.8rem;
-    border-color: rgb(2, 36, 2);
-    border-radius: 3rem;
-    width: 70%;
-    height: 25rem;}
-   .segundoSubVideo{
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    font-size: 3rem;
-    width: 100%;
-    height: 10rem;}
-    .textoDosVideo{
-    background-color: transparent;
-    color: #A3A8FF;
-    margin-top: 2rem;
-    font-style: italic;
-    line-height: 1.6;
-    font-weight: bold;
-    font-size: 1.5rem;
-    text-align: center;}
-    .videoDos{
-    margin: 1.3rem;
-    border-style: groove;
-    border-width: 0.8rem;
-    border-color: rgb(2, 36, 2);
-    border-radius: 3rem;
-    width: 70%;
-    height: 25rem;}
+grid-area: mainVideos;
+background-image: url('../img/forest-passage-4k-wallpaper-preview.jpg');
+background-repeat:round;
+display: flex;
+flex-direction:row;
+flex-wrap: wrap;
+justify-content: center;
+height: 100rem;
+  h2{
+  margin: 3rem;
+  margin-bottom: 5rem;
+  padding:2rem;
+  font-size: 3rem;
+  margin: 0%;
+  padding: 0;
+  height: 10rem;}
+  .textoUnoVideo{
+  background-color: transparent;
+  color: #A3A8FF;
+  margin: 1.8rem;
+  font-style: italic;
+  line-height: 1.6;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;}
+  .videoUno{
+  border-style: groove;
+  border-width: 0.8rem;
+  border-color: rgb(2, 36, 2);
+  border-radius: 3rem;
+  width: 70%;
+  height: 25rem;}
+  .segundoSubVideo{
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 3rem;
+  width: 100%;
+  height: 10rem;}
+  .textoDosVideo{
+  background-color: transparent;
+  color: #A3A8FF;
+  margin-top: 2rem;
+  font-style: italic;
+  line-height: 1.6;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;}
+  .videoDos{
+  margin: 1.3rem;
+  border-style: groove;
+  border-width: 0.8rem;
+  border-color: rgb(2, 36, 2);
+  border-radius: 3rem;
+  width: 70%;
+  height: 25rem;}
 }
-
+/* footer videos*/
 .footerVideos{
-    grid-area: footerVideos;
-    h3{
-    font-size: 1.5rem;
-    color: #1170A2;
-    margin: 0.8rem;}
-    h4{
-    margin: 0.8rem;
-    color:#A3A8FF;
-    font-size: 1.3rem;
-    font-weight: bold;}
-    h5{
-    display: inline-block;
-    background-color: darkmagenta;
-    margin-top: 1.3rem;
-    border-style: groove;
-    border-color: #A3A8FF;
-    font-size: 1.5rem;}
-    ul {
-        display:flex;
-        flex-wrap:nowrap;
-        justify-content:space-between;
+grid-area: footerVideos;
+  h3{
+  font-size: 1.5rem;
+  color: #1170A2;
+  margin: 0.8rem;}
+  h4{
+  margin: 0.8rem;
+  color:#A3A8FF;
+  font-size: 1.3rem;
+  font-weight: bold;}
+  h5{
+  display: inline-block;
+  background-color: darkmagenta;
+  margin-top: 1.3rem;
+  border-style: groove;
+  border-color: #A3A8FF;
+  font-size: 1.5rem;}
+  ul {
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
       li{
-      list-style-type: none;
-      font-style: italic;
-      font-size: 1.3rem;
-      color: darkmagenta;
-      font-weight: bold;
-      border-style:groove;
-      border-color: #6f6faf;
-      border-radius: 0.8rem;
-      background-color:#8F8CB0;
-      border-width:thick;
-      text-transform:uppercase;
-      width: 20%;
+     @include estiloLi;
       a{
         list-style-type: none;
         font-style: italic;
