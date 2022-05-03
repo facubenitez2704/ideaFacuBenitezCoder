@@ -1,0 +1,211 @@
+@import "../utilities/variables" ;
+
+
+/* discografia css*/
+
+/* discofria header*/
+
+.colorDiscografia{
+ height: 100vh;
+ background: rgb(5,30,52);
+ background: radial-gradient(circle, rgba(5,30,52,1) 0%, rgba(0,0,0,1) 100%);;
+ }
+.bodyDiscografia{
+ display: grid;
+ grid-template-areas: "headerDis headerDis headerDis headerDis"
+                      "mainDis mainDis mainDis mainDis"
+                      "sectionDisco sectionDisco sectionDisco sectionDisco"
+                      "footerD footerD footerD footerD";}
+ 
+.headerDiscografia{
+ background-image: url('../img/cielo-estrellado-en-el-bosque.jpg'); 
+ margin-bottom: 2rem;
+ grid-area: headerDis;
+    .tituloDiscografia{
+     color:#000000;
+     text-align:center;}
+    .menuDiscografiaHalos{
+       .menuDiscografia{
+       @include flex;
+       padding: 0.3rem;
+       gap: 2rem;
+        li{
+          a{
+          color: black ;
+          background-color: #A3A8FF;
+          border: 0.2rem solid black;
+          @include aMenu;
+          }
+        }
+      }
+    }
+    .irFooterD{
+        a{
+            color: rgb(151, 146, 146);
+            @include botonFooter;
+        }
+    }
+}
+
+ 
+/*main discografia*/
+ 
+.mainDiscografia{
+     background-image: url('../img/cielo-estrellado-en-el-bosque.jpg');
+     background-size: cover;
+     height:100vh;
+     margin-bottom: 3.3rem;
+     grid-area: mainDis;
+     display: flex;
+     flex-direction:column;
+     flex-wrap: nowrap;
+     align-items:center;
+     gap :3.3rem;
+     justify-content: center;
+    .primerSubtitulo{
+     font-size: 2rem;
+     color:#000000;
+     text-decoration: solid;
+     font-weight:bold;
+     text-transform: uppercase;
+     background-color: #A3A8FF;
+     border: 0.2rem solid black;
+     padding: 0%;
+     position: relative;top: 6rem;}
+      div{
+          .imagenAlbumVivo{
+          margin-top: 4rem;
+          border-style: groove;
+          border:0.3rem solid  #8F8CB0 ;
+          width: 80%;
+          margin-left: 3rem;
+          animation: animacion 2s linear infinite;
+          }
+        }
+        .textoAlbumVivo{
+            display:inline-block;
+            background-color:#8F8CB0;
+            color: #000000;
+            font-weight: bold;
+            font-size: 1.1rem;
+            @media screen and (min-width:600px){
+              font-size: 1rem; }
+            }
+ }
+
+ /*section doscografia*/
+.sectionDisco{
+    grid-area: sectionDisco;
+    background-image: url('../img/cielo-estrellado-en-el-bosque.jpg');
+    background-size: cover;
+    margin-bottom: 3.3rem;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: #000000;
+    
+    .segundoSubtitulo{
+        color:#020314;
+        text-decoration: solid;
+        font-size: 2rem;
+        font-weight:bold;
+        text-transform: uppercase;
+        align-items: center;
+        background-color: #A3A8FF;
+        border: 0.2rem solid black;
+        margin-top: 1.5rem;
+      }
+    div{
+      .imagenAlbum{
+        border-color: #8F8CB0;
+        border-style: groove;
+        border:0.3rem solid  #8F8CB0 ;
+        width: 70%;
+        height: 20rem;
+        margin-left: 4.5rem;
+        animation: animacionDos 2s linear infinite;}
+      }
+    .textoAlbum{
+        display:inline-block;
+        background-color:#8F8CB0;
+        color: #000000;
+        font-weight: bold;
+        font-size: 1.1rem;
+        }
+ }
+
+
+ @keyframes animacion {
+     0%{
+         box-shadow: 0 0 0 0 hsla(192, 49%, 66%, 0.329) ,0 0 0 0 hsla(192, 49%, 66%, 0.295);
+     }
+     30%{
+         box-shadow: 0 0 0 30px hsla(192, 49%, 66%, 0) , 0 0 0 0 hsla(192, 49%, 66%, 0); 
+     }
+   65%{
+         box-shadow: 0 0 0 30px hsla(192, 49%, 66%, 0.158) ,0 0 0 30px hsla(192, 49%, 66%, 0.226);
+     }
+     100%{
+         box-shadow: 0 0 0 50px hsla(192, 49%, 66%, 0.096),0 0 0 10px hsla(192, 49%, 66%, 0.11) ;
+     }
+
+ }
+ 
+ 
+ 
+ @keyframes animacionDos{
+     0%{
+         box-shadow: 0 0 0 0 hsla(192, 49%, 66%, 0.329) ,0 0 0 0 hsla(192, 49%, 66%, 0.295);
+     }
+     30%{
+         box-shadow: 0 0 0 30px hsla(192, 49%, 66%, 0) , 0 0 0 0 hsla(192, 49%, 66%, 0); 
+     }
+   65%{
+         box-shadow: 0 0 0 30px hsla(192, 49%, 66%, 0.158) ,0 0 0 30px hsla(192, 49%, 66%, 0.226);
+     }
+     100%{
+         box-shadow: 0 0 0 50px hsla(192, 49%, 66%, 0.096),0 0 0 10px hsla(192, 49%, 66%, 0.11) ;
+     }
+ } 
+
+ /*footer discografia*/
+ .footerD{
+  grid-area: footerD;
+    h3{
+     font-size: 1.5rem;
+     color: #1170A2;
+     margin: 0.5rem;}
+    h4{
+     margin: 0.5rem;
+     color:#A3A8FF;
+     font-size: 1.3rem;
+     font-weight: bold; }
+    h5{
+     display: inline-block;
+     background-color: darkmagenta;
+     margin-top: 1.3rem;
+     border-style: groove;
+     border-color: #A3A8FF;
+     font-size: 1.3rem; }
+     ul{
+        display:flex;
+        flex-wrap:nowrap;
+        justify-content:space-between;
+        li { 
+        @include estiloLi ;
+         a{
+          list-style-type: none;
+          font-style: italic;
+          font-size: 1.3rem;
+          color: darkmagenta;
+          text-decoration: none;
+          font-weight: bold; }
+        }
+     }
+ }
+ 
+ 
+ 
+ 

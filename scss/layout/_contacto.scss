@@ -1,0 +1,75 @@
+@import "../utilities/variables" ;
+
+
+/*CSS DE SECCION CONTACTOS*/
+.bodyContacto{
+    background: rgb(35,66,10);
+    background: linear-gradient(225deg, rgba(35,66,10,1) 0%, rgba(19,43,4,1) 56%);
+    height: 100vh;
+}
+/*HEADER CONTACTOS*/
+
+.headerContacto{
+    background-image: none;
+    background-image: url('../img/1584713041_archive_shutterstock_1536287759_rz1000.jpg');
+    background-size: contain;
+    padding:1rem;
+    h1{
+        color: #b1ade2;
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .divContacto{
+        .menuContacto {
+            li {
+                background-color:rgb(206, 236, 165) ;
+                display: inline-block;
+                margin:0.3rem;
+                border-radius: 2rem; 
+                &:hover{
+                 transform: scale(1.2) ;
+                 transition: 1s;}
+                a{
+                color: rgb(35,66,10);
+                font-size: 2rem;
+                font-weight: bold;
+                text-decoration:solid;
+                border: 0.1rem solid #A3A8FF ;
+                border-radius: 1rem;}
+            }
+        }
+     }
+     .irFooterC {
+        div{
+            a{
+                color: rgb(151, 146, 146);
+              @include botonFooter;
+            }
+        } 
+    } 
+} 
+
+
+
+
+/*MAIN CONTACTOS*/
+
+.mainContacto{
+    background-image: none;
+    background-image: url('../img/1584713041_archive_shutterstock_1536287759_rz1000.jpg');
+    background-size:cover;
+    margin-bottom: 200px;
+    .fieldsetContacto{
+        background-color:rgb(206, 236, 165) ;
+        color:black;
+        font-size: 40px;
+        font-weight: bold;
+        margin: 30px;
+        border-style:ridge;
+        border-width: 30px;
+        border-color: rgba(4, 36, 8, 0.842);
+        margin-bottom: 100rem;
+    }
+
+}

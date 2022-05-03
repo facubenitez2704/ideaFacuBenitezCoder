@@ -1,0 +1,89 @@
+@import "../utilities/variables" ;
+@import "../utilities/mediaqueries";
+
+/*comienza en css de seccion fotos*/
+.colorFotos{
+    height: 100vh;
+background: rgb(5,30,52);
+background: linear-gradient(225deg, rgba(5,30,52,1) 0%, rgba(19,19,128,1) 100%);
+}
+.bodiFotos{
+    display: grid;
+    grid-template-areas: "headerF headerF headerF headerF"
+                          "mainFoto mainFoto mainFoto mainFoto"
+                          "sectionF sectionF sectionF sectionF"
+                          "footerF footerF footerF footerF";
+}
+
+/*css header fotos*/
+.headerFotos{
+  grid-area: headerF;
+  background-image: url('../img/fondo\ azul3.jpg');
+  background-size: cover ;
+  .tituloFotos{
+    text-align: center; }
+  .menuFotos {
+     ul{
+       @include flex;
+        padding: 0.3rem;
+        gap: 2rem;
+       li{
+            a{
+              color: rgb(155, 154, 165) ;
+              @include aMenu;}
+         }
+      }
+    }
+  .irFooterF { 
+       a{
+      color: rgb(151, 146, 146);
+      @include botonFooter; }
+    }
+}
+
+/*main fotos*/
+.mainFoto{
+  grid-area: mainFoto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url('../img/fondo\ azul3.jpg');
+  background-repeat:repeat;
+  align-items: center;
+}
+ /*footer fotos*/
+.footerF{
+grid-area: footerF;
+  h3{
+  font-size: 1.5rem;
+  color: #1170A2;
+  margin: 0.8rem; }
+  h4{
+  margin: 0.8rem;
+  color:#A3A8FF;
+  font-size: 1.3rem;
+  font-weight: bold;}
+  h5{
+  display: inline-block;
+  background-color: darkmagenta;
+  margin-top: 1.3rem;
+  border-style: groove;
+  border-color: #A3A8FF;
+  font-size: 1.5rem;}
+  ul {
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content:space-between;
+     li{
+        @include estiloLi;
+        a{
+        list-style-type: none;
+        font-style: italic;
+        font-size: 1.3rem;
+        color: darkmagenta;
+        text-decoration: none;
+        font-weight: bold;
+        }
+        }
+       }
+    }
