@@ -1,29 +1,37 @@
 @import "../utilities/variables" ;
-@import "../utilities/mediaqueries";
+
 
 /* empieza css de seccion videos*/
 .colorVideos{
 background-image: none;
 background-color: black;
+height: 100vh;
 }
 
 .bodyVideos{
 display: grid;
 grid-template-areas: "headerVideos headerVideos headerVideos headerVideos"
-                     " mainVideos mainVideos mainVideos mainVideos"
+                     "mainVideos mainVideos mainVideos mainVideos"
                      "mainVideos mainVideos mainVideos mainVideos"
                      "footerVideos footerVideos footerVideos footerVideos";
+
+                     
 }
+
 /*css de header videos*/
 .headerVideos{
 grid-area: headerVideos;
 background-image:url('../img/forest-passage-4k-wallpaper-preview.jpg');
 background-size:auto;
   h1{
-  color: #b1ade2;
-  font-size: 2rem; }
+      color: gray;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+      padding: 2.5rem;
+       }
   .menuVideos {
-
     ul {
        @include flex;
         gap: 2rem;
@@ -47,16 +55,15 @@ background-image: url('../img/forest-passage-4k-wallpaper-preview.jpg');
 background-repeat:round;
 display: flex;
 flex-direction:row;
-flex-wrap: wrap;
+flex-wrap:wrap;
 justify-content: center;
-height: 100rem;
+height: 110rem;
+
   h2{
   margin: 3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   padding:2rem;
   font-size: 3rem;
-  margin: 0%;
-  padding: 0;
   height: 10rem;}
   .textoUnoVideo{
   background-color: transparent;
@@ -67,29 +74,36 @@ height: 100rem;
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
-  margin-top: 2rem;}
+  border: $medida-minima solid $color-bordes;
+  border-style:groove;
+ }
   .videoUno{
+  margin: 1.3rem;
   border-style: groove;
   border-width: 0.8rem;
   border-color: rgb(2, 36, 2);
   border-radius: 3rem;
+  margin-bottom: 2rem;
   width: 70%;
   height: 25rem;}
   .segundoSubVideo{
-  margin-bottom: 1rem;
-  padding: 0.5rem;
+  margin: 3rem;
+  margin-bottom: 3rem;
+  padding:2rem;
   font-size: 3rem;
-  width: 100%;
   height: 10rem;}
+ 
   .textoDosVideo{
   background-color: transparent;
   color: #A3A8FF;
-  margin-top: 2rem;
+  margin: 2rem;
   font-style: italic;
   line-height: 1.6;
   font-weight: bold;
   font-size: 1.5rem;
-  text-align: center;}
+  text-align: center;
+  border: $medida-minima solid $color-bordes;
+  border-style:groove;}
   .videoDos{
   margin: 1.3rem;
   border-style: groove;
@@ -102,6 +116,9 @@ height: 100rem;
 /* footer videos*/
 .footerVideos{
 grid-area: footerVideos;
+margin-top: 10rem;
+height: 20rem;
+
   h3{
   font-size: 1.5rem;
   color: #1170A2;
@@ -114,7 +131,6 @@ grid-area: footerVideos;
   h5{
   display: inline-block;
   background-color: darkmagenta;
-  margin-top: 1.3rem;
   border-style: groove;
   border-color: #A3A8FF;
   font-size: 1.5rem;}

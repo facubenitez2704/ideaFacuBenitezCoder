@@ -22,72 +22,16 @@
   margin-left: 3rem;
   justify-content: center; }
 
-/*media queries*/
-/*segunda media queries*/
-@media screen and (min-width: 1024px) {
-  .imagenesMenu .imagenHaloFacu {
-    width: 35%;
-    height: 50%;
-    border: 0.5rem solid #A3A8FF;
-    border-style: groove;
-    margin-left: 0.8rem; }
-  .imagenesMenu .imagenHaloBar {
-    width: 35%;
-    height: 50%;
-    border: 0.5rem solid #A3A8FF;
-    border-style: groove;
-    margin-left: 0.8rem; }
-  .videoMenu {
-    width: 35%;
-    height: 50%;
-    border: 0.5rem solid #A3A8FF;
-    border-style: groove;
-    margin-left: 0.8rem; }
-  main h2 {
-    font-weight: bold;
-    font-size: 3rem;
-    color: #A3A8FF;
-    padding: 1.3rem;
-    text-align: center;
-    position: relative;
-    top: 10rem;
-    text-transform: lowercase; }
-  .imagenesMenu p {
-    font-size: 2rem;
-    font-weight: bold;
-    color: black;
-    background-color: rgba(132, 13, 212, 0.774);
-    border: 0.5rem solid #A3A8FF;
-    border-style: groove;
-    margin-bottom: 5rem; }
-  header nav ul {
-    padding: 1rem;
-    margin: 1rem; }
-  footer ul li a {
-    font-size: 1.5rem;
-    color: #880488; }
-  footer ul li {
-    font-size: 1.5rem;
-    color: rgba(136, 7, 161, 0.795);
-    border-radius: 0.5rem;
-    width: 8rem;
-    padding: 0.2rem;
-    margin: 0.5rem; }
-  .mainDiscografia .textoAlbumVivo {
-    font-size: 2rem; }
-  .sectionDisco .textoAlbum {
-    font-size: 2rem; } }
-
 /*CSS DE SECCION CONTACTOS*/
 .bodyContacto {
-  background: #23420a;
-  background: linear-gradient(225deg, #23420a 0%, #132b04 56%);
+  background: #051e34;
+  background: radial-gradient(circle, #010508 0%, black 100%);
   height: 100vh; }
 
 /*HEADER CONTACTOS*/
 .headerContacto {
   background-image: none;
-  background-image: url("../img/1584713041_archive_shutterstock_1536287759_rz1000.jpg");
+  background-image: url("../img/forest-passage-4k-wallpaper-preview.jpg");
   background-size: contain;
   padding: 1rem; }
   .headerContacto h1 {
@@ -96,7 +40,6 @@
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif; }
   .headerContacto .divContacto .menuContacto li {
-    background-color: #ceeca5;
     display: inline-block;
     margin: 0.3rem;
     border-radius: 2rem; }
@@ -104,12 +47,16 @@
       transform: scale(1.2);
       transition: 1s; }
     .headerContacto .divContacto .menuContacto li a {
-      color: #23420a;
+      color: #8F8CB0;
+      background-color: #0e1349;
+      border: 0.1rem solid #A3A8FF;
+      border-radius: 0.8rem;
+      list-style: none;
       font-size: 2rem;
       font-weight: bold;
       text-decoration: solid;
-      border: 0.1rem solid #A3A8FF;
-      border-radius: 1rem; }
+      padding: 0.1rem;
+      width: 10rem; }
   .headerContacto .irFooterC div a {
     color: #979292;
     text-decoration: solid;
@@ -122,18 +69,20 @@
 /*MAIN CONTACTOS*/
 .mainContacto {
   background-image: none;
-  background-image: url("../img/1584713041_archive_shutterstock_1536287759_rz1000.jpg");
+  background-image: url("../img/forest-passage-4k-wallpaper-preview.jpg");
   background-size: cover;
-  margin-bottom: 200px; }
+  margin-bottom: 200px;
+  height: 100vh; }
   .mainContacto .fieldsetContacto {
-    background-color: #ceeca5;
+    background-color: #a59c9c;
     color: black;
     font-size: 40px;
     font-weight: bold;
     margin: 30px;
     border-style: ridge;
     border-width: 30px;
-    border-color: rgba(4, 36, 8, 0.842); }
+    border-color: #131212;
+    margin-bottom: 100rem; }
 
 .imagenesMenu .imagenUno .imagenHaloFacu, .imagenesMenu .imagenDos .imagenHaloBar, .imagenesMenu .videoUno .videoMenu {
   width: 90%;
@@ -147,22 +96,18 @@
 /* discofria header*/
 .colorDiscografia {
   height: 100vh;
-  background: #051e34;
-  background: radial-gradient(circle, #051e34 0%, black 100%); }
+  background: radial-gradient(circle, #03090f 0%, #030118 100%); }
 
 .bodyDiscografia {
   display: grid;
-  grid-template-areas: "headerDis headerDis headerDis headerDis"
- "mainDis mainDis mainDis mainDis"
- "sectionDisco sectionDisco sectionDisco sectionDisco"
- "footerD footerD footerD footerD"; }
+  grid-template-areas: "headerDis headerDis headerDis headerDis" "mainDis mainDis mainDis mainDis" "sectionDisco sectionDisco sectionDisco sectionDisco" "footerD footerD footerD footerD"; }
 
 .headerDiscografia {
-  background-image: url("../img/cielo-estrellado-en-el-bosque.jpg");
+  background-image: url("../img/thumb2-forest-night-4k-fireflies-old-tree.jpg");
   margin-bottom: 2rem;
   grid-area: headerDis; }
   .headerDiscografia .tituloDiscografia {
-    color: #000000;
+    color: gray;
     text-align: center; }
   .headerDiscografia .menuDiscografiaHalos .menuDiscografia {
     display: flex;
@@ -170,12 +115,12 @@
     justify-content: space-evenly;
     list-style: none;
     text-transform: uppercase;
-    padding: 0.3rem;
-    gap: 2rem; }
+    margin: 1rem;
+    padding: 0.5rem;
+    gap: 1rem; }
     .headerDiscografia .menuDiscografiaHalos .menuDiscografia li a {
-      color: black;
-      background-color: #A3A8FF;
-      border: 0.2rem solid black;
+      color: #b1ade2;
+      border: 0.1rem solid;
       border-radius: 0.8rem;
       list-style: none;
       font-size: 2rem;
@@ -192,8 +137,9 @@
 
 /*main discografia*/
 .mainDiscografia {
-  background-image: url("../img/cielo-estrellado-en-el-bosque.jpg");
-  background-size: cover;
+  background: #051e34;
+  background: radial-gradient(circle, #051e34 0%, black 100%);
+  background-size: contain;
   height: 100vh;
   margin-bottom: 3.3rem;
   grid-area: mainDis;
@@ -222,19 +168,27 @@
     margin-left: 3rem;
     animation: animacion 2s linear infinite; }
   .mainDiscografia .textoAlbumVivo {
-    display: inline-block;
-    background-color: #8F8CB0;
-    color: #000000;
+    font-size: 1.5rem;
     font-weight: bold;
-    font-size: 1.1rem; }
+    color: #A3A8FF;
+    background: radial-gradient(circle, #03090f 0%, #030118 100%);
+    border: 0.5rem solid #A3A8FF;
+    border-style: groove; }
     @media screen and (min-width: 600px) {
       .mainDiscografia .textoAlbumVivo {
-        font-size: 1rem; } }
+        font-size: 1.8rem;
+        border: 0.5rem solid #A3A8FF;
+        border-style: groove; } }
+    @media screen and (min-width: 1024px) {
+      .mainDiscografia .textoAlbumVivo {
+        font-size: 2.1rem;
+        border: 0.5rem solid #A3A8FF;
+        border-style: groove; } }
 
 /*section doscografia*/
 .sectionDisco {
   grid-area: sectionDisco;
-  background-image: url("../img/cielo-estrellado-en-el-bosque.jpg");
+  background-image: none;
   background-size: cover;
   margin-bottom: 3.3rem;
   display: flex;
@@ -242,7 +196,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #000000; }
+  background: #051e34;
+  background: radial-gradient(circle, #051e34 0%, black 100%); }
   .sectionDisco .segundoSubtitulo {
     color: #020314;
     text-decoration: solid;
@@ -262,11 +217,22 @@
     margin-left: 4.5rem;
     animation: animacionDos 2s linear infinite; }
   .sectionDisco .textoAlbum {
-    display: inline-block;
-    background-color: #8F8CB0;
-    color: #000000;
+    font-size: 1.5rem;
     font-weight: bold;
-    font-size: 1.1rem; }
+    color: #A3A8FF;
+    background: radial-gradient(circle, #03090f 0%, #030118 100%);
+    border: 0.5rem solid #A3A8FF;
+    border-style: groove; }
+    @media screen and (min-width: 600px) {
+      .sectionDisco .textoAlbum {
+        font-size: 1.8rem;
+        border: 0.5rem solid #A3A8FF;
+        border-style: groove; } }
+    @media screen and (min-width: 1024px) {
+      .sectionDisco .textoAlbum {
+        font-size: 2.1rem;
+        border: 0.5rem solid #A3A8FF;
+        border-style: groove; } }
 
 @keyframes animacion {
   0% {
@@ -314,7 +280,7 @@
     .footerD ul li {
       list-style-type: none;
       font-style: italic;
-      font-size: 1.3rem;
+      font-size: 1rem;
       color: darkmagenta;
       font-weight: bold;
       border-style: groove;
@@ -322,7 +288,8 @@
       border-radius: 0.8rem;
       background-color: #8F8CB0;
       border-width: thick;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      width: 20%; }
       .footerD ul li a {
         list-style-type: none;
         font-style: italic;
@@ -346,9 +313,7 @@
 
 .bodyNovedades {
   display: grid;
-  grid-template-areas: "headerN headerN headerN headerN"
- "mainN mainN mainN mainN"
- "footerN footerN footerN footerN"; }
+  grid-template-areas: "headerN headerN headerN headerN" "mainN mainN mainN mainN" "footerN footerN footerN footerN"; }
 
 /*header novedades*/
 .headerNovedades {
@@ -439,7 +404,7 @@
       font-weight: bold;
       border-style: groove;
       border-color: #6f6faf;
-      border-radius: 0.5rem;
+      border-radius: 0.8rem;
       background-color: #8F8CB0;
       border-width: thick;
       text-transform: uppercase;
@@ -460,80 +425,20 @@
   margin-left: 3rem;
   justify-content: center; }
 
-/*media queries*/
-/*segunda media queries*/
-@media screen and (min-width: 1024px) {
-  .imagenesMenu .imagenHaloFacu {
-    width: 35%;
-    height: 50%;
-    border: 0.5rem solid #A3A8FF;
-    border-style: groove;
-    margin-left: 0.8rem; }
-  .imagenesMenu .imagenHaloBar {
-    width: 35%;
-    height: 50%;
-    border: 0.5rem solid #A3A8FF;
-    border-style: groove;
-    margin-left: 0.8rem; }
-  .videoMenu {
-    width: 35%;
-    height: 50%;
-    border: 0.5rem solid #A3A8FF;
-    border-style: groove;
-    margin-left: 0.8rem; }
-  main h2 {
-    font-weight: bold;
-    font-size: 3rem;
-    color: #A3A8FF;
-    padding: 1.3rem;
-    text-align: center;
-    position: relative;
-    top: 10rem;
-    text-transform: lowercase; }
-  .imagenesMenu p {
-    font-size: 2rem;
-    font-weight: bold;
-    color: black;
-    background-color: rgba(132, 13, 212, 0.774);
-    border: 0.5rem solid #A3A8FF;
-    border-style: groove;
-    margin-bottom: 5rem; }
-  header nav ul {
-    padding: 1rem;
-    margin: 1rem; }
-  footer ul li a {
-    font-size: 1.5rem;
-    color: #880488; }
-  footer ul li {
-    font-size: 1.5rem;
-    color: rgba(136, 7, 161, 0.795);
-    border-radius: 0.5rem;
-    width: 8rem;
-    padding: 0.2rem;
-    margin: 0.5rem; }
-  .mainDiscografia .textoAlbumVivo {
-    font-size: 2rem; }
-  .sectionDisco .textoAlbum {
-    font-size: 2rem; } }
-
 /*comienza en css de seccion fotos*/
 .colorFotos {
   height: 100vh;
-  background: #051e34;
-  background: linear-gradient(225deg, #051e34 0%, #131380 100%); }
+  background-color: black; }
 
 .bodiFotos {
   display: grid;
-  grid-template-areas: "headerF headerF headerF headerF"
- "mainFoto mainFoto mainFoto mainFoto"
- "sectionF sectionF sectionF sectionF"
- "footerF footerF footerF footerF"; }
+  grid-template-areas: "headerF headerF headerF headerF" "mainFoto mainFoto mainFoto mainFoto" "sectionF sectionF sectionF sectionF" "footerF footerF footerF footerF"; }
 
 /*css header fotos*/
 .headerFotos {
   grid-area: headerF;
-  background-image: url("../img/fondo azul3.jpg");
-  background-size: cover; }
+  background-image: url("../img/forest-passage-4k-wallpaper-preview.jpg");
+  background-size: auto; }
   .headerFotos .tituloFotos {
     text-align: center; }
   .headerFotos .menuFotos ul {
@@ -566,9 +471,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-image: url("../img/fondo azul3.jpg");
+  background-image: url("../img/forest-passage-4k-wallpaper-preview.jpg");
   background-repeat: repeat;
-  height: auto;
   align-items: center; }
 
 /*footer fotos*/
@@ -597,7 +501,7 @@
     .footerF ul li {
       list-style-type: none;
       font-style: italic;
-      font-size: 1.3rem;
+      font-size: 1rem;
       color: darkmagenta;
       font-weight: bold;
       border-style: groove;
@@ -623,73 +527,15 @@
   margin-left: 3rem;
   justify-content: center; }
 
-/*media queries*/
-/*segunda media queries*/
-@media screen and (min-width: 1024px) {
-  .imagenesMenu .imagenHaloFacu {
-    width: 35%;
-    height: 50%;
-    border: 0.5rem solid #A3A8FF;
-    border-style: groove;
-    margin-left: 0.8rem; }
-  .imagenesMenu .imagenHaloBar {
-    width: 35%;
-    height: 50%;
-    border: 0.5rem solid #A3A8FF;
-    border-style: groove;
-    margin-left: 0.8rem; }
-  .videoMenu {
-    width: 35%;
-    height: 50%;
-    border: 0.5rem solid #A3A8FF;
-    border-style: groove;
-    margin-left: 0.8rem; }
-  main h2 {
-    font-weight: bold;
-    font-size: 3rem;
-    color: #A3A8FF;
-    padding: 1.3rem;
-    text-align: center;
-    position: relative;
-    top: 10rem;
-    text-transform: lowercase; }
-  .imagenesMenu p {
-    font-size: 2rem;
-    font-weight: bold;
-    color: black;
-    background-color: rgba(132, 13, 212, 0.774);
-    border: 0.5rem solid #A3A8FF;
-    border-style: groove;
-    margin-bottom: 5rem; }
-  header nav ul {
-    padding: 1rem;
-    margin: 1rem; }
-  footer ul li a {
-    font-size: 1.5rem;
-    color: #880488; }
-  footer ul li {
-    font-size: 1.5rem;
-    color: rgba(136, 7, 161, 0.795);
-    border-radius: 0.5rem;
-    width: 8rem;
-    padding: 0.2rem;
-    margin: 0.5rem; }
-  .mainDiscografia .textoAlbumVivo {
-    font-size: 2rem; }
-  .sectionDisco .textoAlbum {
-    font-size: 2rem; } }
-
 /* empieza css de seccion videos*/
 .colorVideos {
   background-image: none;
-  background-color: black; }
+  background-color: black;
+  height: 100vh; }
 
 .bodyVideos {
   display: grid;
-  grid-template-areas: "headerVideos headerVideos headerVideos headerVideos"
- " mainVideos mainVideos mainVideos mainVideos"
- "mainVideos mainVideos mainVideos mainVideos"
- "footerVideos footerVideos footerVideos footerVideos"; }
+  grid-template-areas: "headerVideos headerVideos headerVideos headerVideos" "mainVideos mainVideos mainVideos mainVideos" "mainVideos mainVideos mainVideos mainVideos" "footerVideos footerVideos footerVideos footerVideos"; }
 
 /*css de header videos*/
 .headerVideos {
@@ -697,8 +543,12 @@
   background-image: url("../img/forest-passage-4k-wallpaper-preview.jpg");
   background-size: auto; }
   .headerVideos h1 {
-    color: #b1ade2;
-    font-size: 2rem; }
+    color: gray;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2.5rem; }
   .headerVideos .menuVideos ul {
     display: flex;
     flex-wrap: wrap;
@@ -731,14 +581,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  height: 100rem; }
+  height: 110rem; }
   .mainVideos h2 {
     margin: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     padding: 2rem;
     font-size: 3rem;
-    margin: 0%;
-    padding: 0;
     height: 10rem; }
   .mainVideos .textoUnoVideo {
     background-color: transparent;
@@ -749,29 +597,34 @@
     font-weight: bold;
     font-size: 1.5rem;
     text-align: center;
-    margin-top: 2rem; }
+    border: 0.5rem solid #A3A8FF;
+    border-style: groove; }
   .mainVideos .videoUno {
+    margin: 1.3rem;
     border-style: groove;
     border-width: 0.8rem;
     border-color: #022402;
     border-radius: 3rem;
+    margin-bottom: 2rem;
     width: 70%;
     height: 25rem; }
   .mainVideos .segundoSubVideo {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
+    margin: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
     font-size: 3rem;
-    width: 100%;
     height: 10rem; }
   .mainVideos .textoDosVideo {
     background-color: transparent;
     color: #A3A8FF;
-    margin-top: 2rem;
+    margin: 2rem;
     font-style: italic;
     line-height: 1.6;
     font-weight: bold;
     font-size: 1.5rem;
-    text-align: center; }
+    text-align: center;
+    border: 0.5rem solid #A3A8FF;
+    border-style: groove; }
   .mainVideos .videoDos {
     margin: 1.3rem;
     border-style: groove;
@@ -783,7 +636,9 @@
 
 /* footer videos*/
 .footerVideos {
-  grid-area: footerVideos; }
+  grid-area: footerVideos;
+  margin-top: 10rem;
+  height: 20rem; }
   .footerVideos h3 {
     font-size: 1.5rem;
     color: #1170A2;
@@ -796,7 +651,6 @@
   .footerVideos h5 {
     display: inline-block;
     background-color: darkmagenta;
-    margin-top: 1.3rem;
     border-style: groove;
     border-color: #A3A8FF;
     font-size: 1.5rem; }
@@ -807,7 +661,7 @@
     .footerVideos ul li {
       list-style-type: none;
       font-style: italic;
-      font-size: 1.3rem;
+      font-size: 1rem;
       color: darkmagenta;
       font-weight: bold;
       border-style: groove;
@@ -831,10 +685,7 @@
 
 .bodyMenu {
   display: grid;
-  grid-template-areas: "header header header header"
- "main main main main"
- "section section section section"
- "footer footer footer footer"; }
+  grid-template-areas: "header header header header" "main main main main" "section section section section" "footer footer footer footer"; }
 
 header {
   background-image: url("../img/thumb2-forest-night-4k-fireflies-old-tree.jpg");
@@ -1010,49 +861,3 @@ footer {
         @media screen and (min-width: 1024px) {
           footer ul li a {
             font-size: 1.5rem; } }
-
-.sectionF {
-  grid-area: sectionF; }
-
-.sectionF {
-  background-image: url("../img/fondo azul3.jpg");
-  background-repeat: repeat; }
-
-.sectionF {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-items: start; }
-
-.textoFotoCuatro {
-  color: #b1ade2;
-  font-style: italic;
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
-  justify-content: center;
-  text-align: center;
-  margin-top: 2rem; }
-
-.imagenFotoCuatro {
-  border-color: #A3A8FF;
-  border-width: 0.8rem;
-  border-style: groove;
-  width: 70%;
-  height: 20rem; }
-
-.textoFotoCinco {
-  color: #b1ade2;
-  font-style: italic;
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  text-align: center; }
-
-.imagenFotoCinco {
-  border-color: #A3A8FF;
-  border-width: 0.8rem;
-  border-style: groove;
-  margin-bottom: 30rem;
-  width: 70%;
-  height: 20rem;
-  margin-top: 2rem; }

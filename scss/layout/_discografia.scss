@@ -7,8 +7,7 @@
 
 .colorDiscografia{
  height: 100vh;
- background: rgb(5,30,52);
- background: radial-gradient(circle, rgba(5,30,52,1) 0%, rgba(0,0,0,1) 100%);;
+ background: radial-gradient(circle,rgb(3, 9, 15) 0%, rgb(3, 1, 24) 100% );
  }
 .bodyDiscografia{
  display: grid;
@@ -18,27 +17,29 @@
                       "footerD footerD footerD footerD";}
  
 .headerDiscografia{
- background-image: url('../img/cielo-estrellado-en-el-bosque.jpg'); 
+background-image: url('../img/thumb2-forest-night-4k-fireflies-old-tree.jpg');
  margin-bottom: 2rem;
  grid-area: headerDis;
     .tituloDiscografia{
-     color:#000000;
+     color: gray;
      text-align:center;}
     .menuDiscografiaHalos{
        .menuDiscografia{
-       @include flex;
-       padding: 0.3rem;
-       gap: 2rem;
-        li{
-          a{
-          color: black ;
-          background-color: #A3A8FF;
-          border: 0.2rem solid black;
-          @include aMenu;
+          @include flex ;
+          margin: 1rem;
+          padding: 0.5rem;
+          gap: 1rem;
+          li{
+             a{
+              color:#b1ade2;
+              border: 0.1rem solid;
+              @include aMenu;
+               }
+           }
           }
         }
-      }
-    }
+      
+    
     .irFooterD{
         a{
             color: rgb(151, 146, 146);
@@ -51,8 +52,9 @@
 /*main discografia*/
  
 .mainDiscografia{
-     background-image: url('../img/cielo-estrellado-en-el-bosque.jpg');
-     background-size: cover;
+     background: rgb(5,30,52);
+     background: radial-gradient(circle, rgba(5,30,52,1) 0%, rgba(0,0,0,1) 100%);
+     background-size:contain;
      height:100vh;
      margin-bottom: 3.3rem;
      grid-area: mainDis;
@@ -83,20 +85,28 @@
           }
         }
         .textoAlbumVivo{
-            display:inline-block;
-            background-color:#8F8CB0;
-            color: #000000;
-            font-weight: bold;
-            font-size: 1.1rem;
-            @media screen and (min-width:600px){
-              font-size: 1rem; }
-            }
+          font-size: $medida-basica;
+          font-weight:bold;
+          color:  #A3A8FF;
+          background: radial-gradient(circle,rgb(3, 9, 15) 0%, rgb(3, 1, 24) 100% );
+          border: $medida-minima solid $color-bordes;
+          border-style:groove; 
+          @media screen and (min-width:600px){
+          font-size: 1.8rem;
+          border: 0.5rem solid #A3A8FF;
+          border-style:groove;}
+          @media screen and (min-width:1024px){
+          font-size: 2.1rem;
+          border: 0.5rem solid #A3A8FF;
+          border-style:groove;
+           }
+        }
  }
 
  /*section doscografia*/
 .sectionDisco{
     grid-area: sectionDisco;
-    background-image: url('../img/cielo-estrellado-en-el-bosque.jpg');
+    background-image: none;
     background-size: cover;
     margin-bottom: 3.3rem;
     display: flex;
@@ -104,7 +114,8 @@
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
-    background-color: #000000;
+    background: rgb(5,30,52);
+    background: radial-gradient(circle, rgba(5,30,52,1) 0%, rgba(0,0,0,1) 100%);;
     
     .segundoSubtitulo{
         color:#020314;
@@ -128,11 +139,21 @@
         animation: animacionDos 2s linear infinite;}
       }
     .textoAlbum{
-        display:inline-block;
-        background-color:#8F8CB0;
-        color: #000000;
-        font-weight: bold;
-        font-size: 1.1rem;
+      font-size: $medida-basica;
+      font-weight:bold;
+      color:  #A3A8FF;
+      background: radial-gradient(circle,rgb(3, 9, 15) 0%, rgb(3, 1, 24) 100% );
+      border: $medida-minima solid $color-bordes;
+      border-style:groove; 
+      @media screen and (min-width:600px){
+      font-size: 1.8rem;
+      border: 0.5rem solid #A3A8FF;
+      border-style:groove;}
+      @media screen and (min-width:1024px){
+      font-size: 2.1rem;
+      border: 0.5rem solid #A3A8FF;
+      border-style:groove;
+       }
         }
  }
 
