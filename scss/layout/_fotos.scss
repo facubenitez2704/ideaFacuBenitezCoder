@@ -4,9 +4,13 @@
 /*comienza en css de seccion fotos*/
 .colorFotos{
     height: 100vh;
-    background-color: black;
+    background: rgb(5,30,52);
+    background: radial-gradient(circle, rgba(5,30,52,1) 0%, rgba(0,0,0,1) 100%);
 }
 .bodiFotos{
+  background-image: url('../img/halo animacion7.gif');
+    background-size:cover;
+    background-repeat:repeat;
     display: grid;
     grid-template-areas: "headerF headerF headerF headerF"
                           "mainFoto mainFoto mainFoto mainFoto"
@@ -17,9 +21,13 @@
 /*css header fotos*/
 .headerFotos{
   grid-area: headerF;
-  background-image:url('../img/forest-passage-4k-wallpaper-preview.jpg');
-  background-size:auto;
+  background-image: none;
+  background-image: url('../img/halo animacion7.gif');
+  background-repeat:repeat;
+  background-size:contain;
   .tituloFotos{
+    color: #b1ade2;
+    font-size: 2.5rem;
     text-align: center; }
   .menuFotos {
      ul{
@@ -35,7 +43,6 @@
     }
   .irFooterF { 
        a{
-      color: rgb(151, 146, 146);
       @include botonFooter; }
     }
 }
@@ -46,43 +53,57 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-image:url('../img/forest-passage-4k-wallpaper-preview.jpg');
-  background-repeat:repeat;
+  background-image: url('../img/halo animacion1.png');
+  background-size:cover;
+  background-repeat: no-repeat;
   align-items: center;
 }
  /*footer fotos*/
 .footerF{
 grid-area: footerF;
+background-image: url('../img/halo animacion7.gif');
+background-size:auto;
+background-repeat:repeat;
   h3{
-  font-size: 1.5rem;
-  color: #1170A2;
-  margin: 0.8rem; }
+      font-size: $medida-basica;
+      color: #1170A2;
+      margin: $medida-minima ;}
   h4{
-  margin: 0.8rem;
-  color:#A3A8FF;
-  font-size: 1.3rem;
-  font-weight: bold;}
+      margin: $medida-minima;
+      color: $color-bordes;
+      font-size: 1.3rem;
+      font-weight: bold; }
   h5{
-  display: inline-block;
-  background-color: darkmagenta;
-  margin-top: 1.3rem;
-  border-style: groove;
-  border-color: #A3A8FF;
-  font-size: 1.5rem;}
-  ul {
-  display:flex;
-  flex-wrap:nowrap;
-  justify-content:space-between;
-     li{
-        @include estiloLi;
-        a{
-        list-style-type: none;
-        font-style: italic;
-        font-size: 1.3rem;
-        color: darkmagenta;
-        text-decoration: none;
-        font-weight: bold;
-        }
-        }
-       }
-    }
+     display: inline-block;
+     background-color: $color-footer;
+     margin-top: 1.3rem;
+     border-style: groove;
+     border-color: $color-bordes;
+     font-size: 1.3rem; }
+   ul{
+      display:flex;
+      flex-wrap:nowrap;
+      justify-content:space-between;
+      li { 
+      @include estiloLi ;
+      @media screen and (min-width:1024px){
+          font-size: 1.5rem;
+          border-radius: 1rem;
+          padding: 0.2rem;
+          margin: 0.5rem;
+          width: 6rem;
+          }
+       a{
+          list-style-type: none;
+          font-style: italic;
+          font-size: 1rem;
+          color: $color-footer;
+          text-decoration: none;
+          font-weight: bold;
+          @media screen and (min-width:1024px) {
+          font-size: 1.5rem;}
+              }
+      }
+   }
+}
+

@@ -4,7 +4,8 @@
 /* empieza css de seccion videos*/
 .colorVideos{
 background-image: none;
-background-color: black;
+background: rgb(5,30,52);
+ background: radial-gradient(circle, rgba(5,30,52,1) 0%, rgba(0,0,0,1) 100%);
 height: 100vh;
 }
 
@@ -21,14 +22,16 @@ grid-template-areas: "headerVideos headerVideos headerVideos headerVideos"
 /*css de header videos*/
 .headerVideos{
 grid-area: headerVideos;
-background-image:url('../img/forest-passage-4k-wallpaper-preview.jpg');
-background-size:auto;
+background-image:none;
+background-image: url('../img/halo animacion7.gif');
+background-repeat:repeat;
+background-size:contain;
   h1{
-      color: gray;
+      color: #b1ade2;
+      font-size: 2.5rem;
       text-align: center;
-      font-size: 3rem;
       font-weight: bold;
-      font-family: 'Times New Roman', Times, serif;
+      font-family: 'Fjalla One', sans-serif;
       padding: 2.5rem;
        }
   .menuVideos {
@@ -44,15 +47,14 @@ background-size:auto;
    }
 .irFooterV{
   a{
-  color: rgb(151, 146, 146);
    @include botonFooter;}
     }
 }
 /*css main vdeos*/
 .mainVideos{
 grid-area: mainVideos;
-background-image: url('../img/forest-passage-4k-wallpaper-preview.jpg');
-background-repeat:round;
+background-image: url('../img/halo animacion5.png');
+background-size:contain;
 display: flex;
 flex-direction:row;
 flex-wrap:wrap;
@@ -76,6 +78,9 @@ height: 110rem;
   text-align: center;
   border: $medida-minima solid $color-bordes;
   border-style:groove;
+  @media screen and (min-width:1024px){
+    font-size: 2rem;
+    }
  }
   .videoUno{
   margin: 1.3rem;
@@ -91,7 +96,10 @@ height: 110rem;
   margin-bottom: 3rem;
   padding:2rem;
   font-size: 3rem;
-  height: 10rem;}
+  height: 10rem;
+  @media screen and (min-width:1024px){
+    color:rgba(158, 12, 122, 0.801);
+    }}
  
   .textoDosVideo{
   background-color: transparent;
@@ -103,7 +111,10 @@ height: 110rem;
   font-size: 1.5rem;
   text-align: center;
   border: $medida-minima solid $color-bordes;
-  border-style:groove;}
+  border-style:groove;
+  @media screen and (min-width:1024px){
+    font-size: 2rem;
+    }}
   .videoDos{
   margin: 1.3rem;
   border-style: groove;
@@ -115,40 +126,51 @@ height: 110rem;
 }
 /* footer videos*/
 .footerVideos{
+background-image: url('../img/halo animacion7.gif');
+background-repeat:repeat;
+background-size:contain;
 grid-area: footerVideos;
 margin-top: 10rem;
-height: 20rem;
 
   h3{
-  font-size: 1.5rem;
-  color: #1170A2;
-  margin: 0.8rem;}
+      font-size: $medida-basica;
+      color: #1170A2;
+      margin: $medida-minima ;}
   h4{
-  margin: 0.8rem;
-  color:#A3A8FF;
-  font-size: 1.3rem;
-  font-weight: bold;}
+      margin: $medida-minima;
+      color: $color-bordes;
+      font-size: 1.3rem;
+      font-weight: bold; }
   h5{
-  display: inline-block;
-  background-color: darkmagenta;
-  border-style: groove;
-  border-color: #A3A8FF;
-  font-size: 1.5rem;}
-  ul {
-    display:flex;
-    flex-wrap:nowrap;
-    justify-content:space-between;
-      li{
-     @include estiloLi;
-      a{
+     display: inline-block;
+     background-color: $color-footer;
+     margin-top: 1.3rem;
+     border-style: groove;
+     border-color: $color-bordes;
+     font-size: 1.3rem; }
+   ul{
+      display:flex;
+      flex-wrap:nowrap;
+      justify-content:space-between;
+      li { 
+      @include estiloLi ;
+      @media screen and (min-width:1024px){
+          font-size: 1.5rem;
+          border-radius: 1rem;
+          padding: 0.2rem;
+          margin: 0.5rem;
+          width: 6rem;
+          }
+       a{
         list-style-type: none;
         font-style: italic;
         font-size: 1.3rem;
         color: darkmagenta;
         text-decoration: none;
-        font-weight: bold;}
-      } 
-    }
-
-
+        font-weight: bold;
+        @media screen and (min-width:1024px) {
+          font-size: 1.5rem;} }
+      }
+   }
 }
+

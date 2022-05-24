@@ -7,7 +7,9 @@
 
 .colorDiscografia{
  height: 100vh;
- background: radial-gradient(circle,rgb(3, 9, 15) 0%, rgb(3, 1, 24) 100% );
+ background: rgb(5,30,52);
+ background: radial-gradient(circle, rgba(5,30,52,1) 0%, rgba(0,0,0,1) 100%);
+ 
  }
 .bodyDiscografia{
  display: grid;
@@ -17,12 +19,17 @@
                       "footerD footerD footerD footerD";}
  
 .headerDiscografia{
-background-image: url('../img/thumb2-forest-night-4k-fireflies-old-tree.jpg');
+background-image:none;
+background-image: url('../img/halo animacion7.gif');
+background-size:auto;
+background-repeat:repeat;
  margin-bottom: 2rem;
  grid-area: headerDis;
     .tituloDiscografia{
-     color: gray;
-     text-align:center;}
+     font-family: 'Fjalla One', sans-serif;
+     color: #b1ade2;
+     font-size: 2.5rem;
+     text-align:center; }
     .menuDiscografiaHalos{
        .menuDiscografia{
           @include flex ;
@@ -42,7 +49,6 @@ background-image: url('../img/thumb2-forest-night-4k-fireflies-old-tree.jpg');
     
     .irFooterD{
         a{
-            color: rgb(151, 146, 146);
             @include botonFooter;
         }
     }
@@ -52,9 +58,8 @@ background-image: url('../img/thumb2-forest-night-4k-fireflies-old-tree.jpg');
 /*main discografia*/
  
 .mainDiscografia{
-     background: rgb(5,30,52);
-     background: radial-gradient(circle, rgba(5,30,52,1) 0%, rgba(0,0,0,1) 100%);
-     background-size:contain;
+     background-image: none;
+     background-image: url('../img/halo animacion9.png');
      height:100vh;
      margin-bottom: 3.3rem;
      grid-area: mainDis;
@@ -107,6 +112,7 @@ background-image: url('../img/thumb2-forest-night-4k-fireflies-old-tree.jpg');
 .sectionDisco{
     grid-area: sectionDisco;
     background-image: none;
+    background-image: url('../img/halo animacion9.png');
     background-size: cover;
     margin-bottom: 3.3rem;
     display: flex;
@@ -114,8 +120,7 @@ background-image: url('../img/thumb2-forest-night-4k-fireflies-old-tree.jpg');
     flex-direction: column;
     justify-content:flex-start;
     align-items: center;
-    background: rgb(5,30,52);
-    background: radial-gradient(circle, rgba(5,30,52,1) 0%, rgba(0,0,0,1) 100%);;
+    
     
     .segundoSubtitulo{
         color:#020314;
@@ -193,36 +198,48 @@ background-image: url('../img/thumb2-forest-night-4k-fireflies-old-tree.jpg');
 
  /*footer discografia*/
  .footerD{
+  background-image: url('../img/halo animacion7.gif');
+  background-size:auto;
+  background-repeat:repeat;
   grid-area: footerD;
     h3{
-     font-size: 1.5rem;
-     color: #1170A2;
-     margin: 0.5rem;}
+        font-size: $medida-basica;
+        color: #1170A2;
+        margin: $medida-minima ;}
     h4{
-     margin: 0.5rem;
-     color:#A3A8FF;
-     font-size: 1.3rem;
-     font-weight: bold; }
+        margin: $medida-minima;
+        color: $color-bordes;
+        font-size: 1.3rem;
+        font-weight: bold; }
     h5{
-     display: inline-block;
-     background-color: darkmagenta;
-     margin-top: 1.3rem;
-     border-style: groove;
-     border-color: #A3A8FF;
-     font-size: 1.3rem; }
+       display: inline-block;
+       background-color: $color-footer;
+       margin-top: 1.3rem;
+       border-style: groove;
+       border-color: $color-bordes;
+       font-size: 1.3rem; }
      ul{
         display:flex;
         flex-wrap:nowrap;
         justify-content:space-between;
         li { 
         @include estiloLi ;
+        @media screen and (min-width:1024px){
+            font-size: 1.5rem;
+            border-radius: 1rem;
+            padding: 0.2rem;
+            margin: 0.5rem;
+            width: 6rem;
+            }
          a{
           list-style-type: none;
           font-style: italic;
           font-size: 1.3rem;
           color: darkmagenta;
           text-decoration: none;
-          font-weight: bold; }
+          font-weight: bold;
+          @media screen and (min-width:1024px) {
+            font-size: 1.5rem;} }
         }
      }
  }

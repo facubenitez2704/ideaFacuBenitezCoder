@@ -3,8 +3,8 @@
 
 .colorNovedades{
 background-image: none;
-background: rgb(71,6,113);
-background: linear-gradient(126deg, rgba(71,6,113,1) 0%, rgba(91,8,105,1) 76%, rgba(182,24,144,1) 98%);
+background: rgb(5,30,52);
+ background: radial-gradient(circle, rgba(5,30,52,1) 0%, rgba(0,0,0,1) 100%);
 }
 .bodyNovedades {
 display: grid;
@@ -16,7 +16,14 @@ grid-template-areas: "headerN headerN headerN headerN"
 
 .headerNovedades{
 grid-area: headerN;   
-background-image: url('../img/fondo\ planetario\ violeta.jpg');
+background-image:none;
+background-image: url('../img/halo animacion7.gif');
+background-repeat:repeat;
+background-size:contain;
+  .tituloNovedades{
+    color: #b1ade2;
+    font-size: 2.5rem;}
+  }
   .menuNovedades{
       ul{
         @include flex ;
@@ -34,19 +41,19 @@ background-image: url('../img/fondo\ planetario\ violeta.jpg');
       }
   .irFooterN {
       a{
-         color:#8F8CB0;
          @include botonFooter;
         }
      } 
-}
+
     
 
 /*main novedaes*/
 
 .mainNovedades{
 grid-area: mainN;
-background-image: url('../img/fondo\ planetario\ violeta.jpg');
-background-size: cover;
+background-image: url('../img/halo animacion7.gif');
+background-size:contain;
+background-repeat: repeat;
 display: flex;
 flex-direction:row;
 flex-wrap:wrap; 
@@ -60,7 +67,10 @@ justify-content:center;
     text-transform: uppercase;
     justify-content:center;
     position: relative;
-    top: auto;}
+    top: auto;
+    @media screen and (min-width:1024px){
+      font-size: 2.5rem;
+      }}
   .textoNovedades{
      color: #8F8CB0;
      font-style: italic;
@@ -69,6 +79,9 @@ justify-content:center;
      text-decoration: solid;
      text-align: center;
      margin: 2rem;
+     @media screen and (min-width:1024px){
+      font-size: 2rem;
+      }
      }
 }
 
@@ -76,36 +89,49 @@ justify-content:center;
 
 .footerN{
 grid-area: footerN;
+background-image: url('../img/halo animacion7.gif');
+background-size:auto;
+background-repeat:repeat;
   h3{
-    font-size: 1.5rem;
-    color: #1170A2;
-    margin: 0.5rem; }
+      font-size: $medida-basica;
+      color: #1170A2;
+      margin: $medida-minima ;}
   h4{
-    margin: 0.5rem;
-    color:#A3A8FF;
-    font-size: 1.1rem;
-    font-weight: bold;}
-   h5{
-    display: inline-block;
-    background-color: darkmagenta;
-    margin-top: 1rem;
-    border-style: groove;
-    border-color: #A3A8FF;
-    font-size: 1rem; }
-   ul {
-    display:flex;
-    flex-wrap:nowrap;
-    justify-content:space-between;
-       li{
-        @include estiloLi;
+      margin: $medida-minima;
+      color: $color-bordes;
+      font-size: 1.3rem;
+      font-weight: bold; }
+  h5{
+     display: inline-block;
+     background-color: $color-footer;
+     margin-top: 1.3rem;
+     border-style: groove;
+     border-color: $color-bordes;
+     font-size: 1.3rem; }
+   ul{
+      display:flex;
+      flex-wrap:nowrap;
+      justify-content:space-between;
+      li { 
+      @include estiloLi ;
+      @media screen and (min-width:1024px){
+          font-size: 1.5rem;
+          border-radius: 1rem;
+          padding: 0.2rem;
+          margin: 0.5rem;
+          width: 6rem;
+          }
        a{
         list-style-type: none;
         font-style: italic;
-        font-size: 1rem;
+        font-size: 1.3rem;
         color: darkmagenta;
         text-decoration: none;
-        font-weight: bold; }  
-       }
-    }
- }
+        font-weight: bold;
+        @media screen and (min-width:1024px) {
+          font-size: 1.5rem;} }
+      }
+   }
+}
+
 
